@@ -160,4 +160,4 @@ public class FCMPlugin extends CordovaPlugin {
 		gWebView = null;
 		notificationCallBackReady = false;
 	}
-} 
+}
