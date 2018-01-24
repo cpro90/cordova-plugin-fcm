@@ -1,3 +1,4 @@
+
 # Google Firebase Cloud Messaging Cordova Push Plugin
 > Extremely easy plug&play push notification plugin for Cordova applications with Google Firebase FCM.
 
@@ -9,6 +10,26 @@
 - 'google-services.json' and 'GoogleService-Info.plist' are added automatically from Cordova project root to platform folders
 - Added data payload parameter to check whether the user tapped on the notification or was received while in foreground.
 - **Free testing server available for free! https://cordova-plugin-fcm.appspot.com**
+
+##Usage of Settings in grade.build
+
+At compile dependencies
+
+- compile "com.google.android.gms:play-services-auth:11.0.1"
+- compile "com.google.android.gms:play-services-identity:11.0.1"
+- compile "com.google.firebase:firebase-core:11.0.1"
+- compile "com.google.firebase:firebase-messaging:11.0.1"
+
+At buildscript dependencies:
+
+- classpath 'com.android.tools.build:gradle:2.2.3'
+- classpath 'com.google.gms:google-services:3.0.0'
+
+At the bottom:
+
+- apply plugin: 'com.google.gms.google-services'
+
+Plugin should now work with fbook and googleplus social plugins.
 
 ## Installation
 Make sure you have ‘google-services.json’ for Android or  ‘GoogleService-Info.plist’ for iOS in your Cordova project root folder. You don´t need to configure anything else in order to have push notification working for both platforms, everything is magic.
