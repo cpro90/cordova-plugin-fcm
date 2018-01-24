@@ -11,7 +11,7 @@
 - Added data payload parameter to check whether the user tapped on the notification or was received while in foreground.
 - **Free testing server available for free! https://cordova-plugin-fcm.appspot.com**
 
-##Usage of Settings in grade.build
+#### Usage of Settings in grade.build
 
 At compile dependencies
 
